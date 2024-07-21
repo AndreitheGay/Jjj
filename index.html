@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Larger Image with Dark Red Diamond Pattern Background</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6E6E6E; /* Fallback background color */
+            background-image: repeating-linear-gradient(
+                45deg,
+                #6E6E6E 25%,
+                #8B0000 25%, /* Darker red color */
+                #8B0000 50%,
+                #6E6E6E 50%,
+                #6E6E6E 75%,
+                #8B0000 75%,
+                #8B0000 100%
+            );
+            background-size: 60px 60px; /* Size of the pattern */
+        }
+        .centered-image {
+            width: 85%; /* Width set to 85% of viewport width */
+            height: auto; /* Height adjusts to maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cdn.discordapp.com/attachments/1174071935882240050/1264262428280229938/Untitled7_20240720193901.png?ex=669d3ba3&is=669bea23&hm=fc88ed2a8843dc748c8ca06eacf67583478c560b610279852a68df29f1f9f806&" class="centered-image" alt="Centered Image">
+</body>
+</html>
